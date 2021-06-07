@@ -11,15 +11,18 @@
 
     <ImageView
         android:id="@+id/info_poster"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.6"
         android:gravity="center"
-        android:scaleType="fitCenter"
         android:src="@drawable/sln"
         android:transitionName="@string/poster_transition"
-        app:layout_constraintBottom_toTopOf="@id/info_title"
-        app:layout_constraintTop_toBottomOf="@id/info_back_btn" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/info_back_btn"
@@ -28,14 +31,14 @@
         android:elevation="3dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="1:0.9"
+        app:layout_constraintDimensionRatio="1:0.95"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.035"
+        app:layout_constraintHeight_percent="0.043"
         app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.025"
-        app:srcCompat="@drawable/abc_vector_test" />
+        app:srcCompat="@drawable/back_icon" />
 
     <TextView
         android:id="@+id/info_title"
@@ -44,13 +47,14 @@
         android:elevation="3dp"
         android:fontFamily="@font/long_fox"
         android:gravity="center"
-        android:paddingHorizontal="24dp"
+        android:paddingHorizontal="8dp"
         android:text="@string/sarileru_neekevvaru"
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintTop_toBottomOf="@+id/info_poster"
+        app:layout_constraintVertical_bias="0.03"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
