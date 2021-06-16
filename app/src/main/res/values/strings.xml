@@ -15,7 +15,8 @@
     <string name="action_about">About</string>
     <string name="poster_transition">PosterTransition</string>
     <string name="title_transition">TitleTransition</string>
-
+    <string name="synopsis">Synopsis</string>
+    <string name="sarileru_neekevvaru_summary">Ajay, an army major, journeys to Kurnool when he is assigned a covert mission. However, he finds himself in the middle of a major scam and sets out to uncover the truth.</string>
     <string name="menu_movies">Movies</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
