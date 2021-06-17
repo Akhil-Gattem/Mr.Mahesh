@@ -41,14 +41,21 @@ class InfoScreenActivity : AppCompatActivity() {
 
     private fun getMovieSummary() {
         val databaseReference = FirebaseDatabase.getInstance().reference
-        val query = databaseReference.child("summary").child("one")
+        val query = databaseReference.child("movielist")
         query.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
-                for (data in dataSnapshot.children) {
-                    val summaryText = data.value.toString()
-                    summary.text = summaryText
+                var count = 1
+                while (count <= dataSnapshot.childrenCount.toInt()) {
+                    val movieNameData = dataSnapshot.child(count.toString()).child("title").value.toString()
+                    if (movieNameData == titleData) {
+                        val summaryText = dataSnapshot.child(count.toString()).child("summary").value.toString()
+                        summary.text = summaryText
+                        break
+                    }
+                    count++
                 }
             }
+
             override fun onCancelled(databaseError: DatabaseError) {}
         })
     }
