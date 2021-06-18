@@ -31,6 +31,7 @@ class InfoScreenActivity : AppCompatActivity() {
         info_title.text = titleData
         info_title.isSelected = true
         getMovieSummary()
+
     }
 
     private fun animation(imageView: View, animator: Int) {
@@ -45,7 +46,7 @@ class InfoScreenActivity : AppCompatActivity() {
         query.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 var count = 1
-                while (count <= dataSnapshot.childrenCount.toInt()) {
+                while (count <= dataSnapshot.childrenCount.toInt() + 1) {
                     val movieNameData = dataSnapshot.child(count.toString()).child("title").value.toString()
                     if (movieNameData == titleData) {
                         val summaryText = dataSnapshot.child(count.toString()).child("summary").value.toString()

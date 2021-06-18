@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources >
     <!-- Base application theme. -->
     <style name="Theme.MaheshBabu" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
@@ -15,8 +15,11 @@
         <!-- Customize your theme here. -->
         <item name="android:activatedBackgroundIndicator">@drawable/activated_background</item>
         <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/intent_transition</item>
+        <item name="android:windowExitTransition">@transition/intent_transition</item>
         <item name="android:actionMenuTextColor">@color/white</item>
         <item name="android:itemBackground">@color/grey</item>
+
     </style>
     <style name="ToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textColorSecondary">@color/white</item>

@@ -1,12 +1,12 @@
 package com.example.maheshbabu.ui.home
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.TextView
-import androidx.core.app.ActivityOptionsCompat
-import androidx.core.util.Pair
 import androidx.core.view.ViewCompat
 import androidx.core.view.isInvisible
 import androidx.fragment.app.Fragment
@@ -19,7 +19,6 @@ import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.android.material.imageview.ShapeableImageView
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.fragment_home.*
-import kotlinx.android.synthetic.main.layout_info_screen.*
 
 
 class HomeFragment : Fragment(), RecyclerViewAdapter.OnItemListener {
@@ -81,9 +80,8 @@ class HomeFragment : Fragment(), RecyclerViewAdapter.OnItemListener {
         intent.putExtra("poster", listener.poster)
         intent.putExtra("title", listener.title)
         intent.putExtra("poster_transition", ViewCompat.getTransitionName(poster))
-        val options: ActivityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(
-            this.requireActivity(), poster, ViewCompat.getTransitionName(poster)!!
-        )
-        startActivity(intent, options.toBundle())
+        val options = ActivityOptions.makeSceneTransitionAnimation(this.requireActivity())
+
+        startActivity(intent,options.toBundle())
     }
 }

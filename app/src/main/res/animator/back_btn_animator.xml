@@ -2,7 +2,7 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:ordering="together">
     <objectAnimator
-        android:duration="100"
+        android:duration="150"
         android:propertyName="translationX"
-        android:valueTo="-15dp" />
+        android:valueTo="-10dp" />
 </set>
