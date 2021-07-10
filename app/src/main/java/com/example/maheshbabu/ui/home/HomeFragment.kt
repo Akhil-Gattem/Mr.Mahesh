@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.app.ActivityOptionsCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.isInvisible
 import androidx.fragment.app.Fragment
@@ -80,8 +81,7 @@ class HomeFragment : Fragment(), RecyclerViewAdapter.OnItemListener {
         intent.putExtra("poster", listener.poster)
         intent.putExtra("title", listener.title)
         intent.putExtra("poster_transition", ViewCompat.getTransitionName(poster))
-        val options = ActivityOptions.makeSceneTransitionAnimation(this.requireActivity())
-
-        startActivity(intent,options.toBundle())
+        val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this.requireActivity(), poster, ViewCompat.getTransitionName(poster)!!)
+        startActivity(intent, options.toBundle())
     }
 }

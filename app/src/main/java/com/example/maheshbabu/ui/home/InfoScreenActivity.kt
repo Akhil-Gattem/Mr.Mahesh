@@ -27,8 +27,10 @@ class InfoScreenActivity : AppCompatActivity() {
             posterData = intent.extras?.getString("poster").toString()
             titleData = intent.extras?.getString("title").toString()
         }
-        Glide.with(info_poster).load(posterData).error(R.color.light_dark).into(info_poster)
+        val imageTransitionName = extras?.getString("poster_transition")
+        info_poster.transitionName = imageTransitionName
         info_title.text = titleData
+        Glide.with(info_poster).load(posterData).error(R.color.light_dark).into(info_poster)
         info_title.isSelected = true
         getMovieSummary()
 

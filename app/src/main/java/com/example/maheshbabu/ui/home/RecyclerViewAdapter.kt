@@ -34,6 +34,7 @@ class RecyclerViewAdapter(
             .error(R.color.light_dark).into(
                 holder.movieRating
             )
+        ViewCompat.setTransitionName(holder.moviePoster, holder.adapterPosition.toString())
         holder.initialize(holding, clickListener)
     }
 
