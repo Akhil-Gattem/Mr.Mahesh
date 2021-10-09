@@ -5,20 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_dark"
-    tools:context=".ui.gallery.GalleryFragment">
+    tools:context="com.zimneos.mr_mahesh.ui.gallery.GalleryFragment">
 
     <TextView
         android:id="@+id/text_gallery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/long_fox"
-        android:text="@string/coming_soon"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="24sp"
+        android:paddingTop="4dp"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

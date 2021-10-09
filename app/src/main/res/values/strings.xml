@@ -4,12 +4,6 @@
     <string name="sarileru_neekevvaru">Sarileru Neekevvaru</string>
     <string name="anil_ravipudi">By Anil Ravipudi</string>
     <string name="twenty_twenty">2020</string>
-    <string name="mr_mahesh">Mr.Mahesh</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">zimneos.contact@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="action_about">About</string>
