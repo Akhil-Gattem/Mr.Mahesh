@@ -13,11 +13,11 @@ import androidx.core.view.isInvisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.zimneos.mr_mahesh.R
 import com.facebook.shimmer.ShimmerFrameLayout
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.android.material.imageview.ShapeableImageView
 import com.google.firebase.database.FirebaseDatabase
+import com.zimneos.mr_mahesh.R
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.coroutines.*
 

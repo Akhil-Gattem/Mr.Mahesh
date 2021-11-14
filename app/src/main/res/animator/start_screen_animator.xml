@@ -9,7 +9,7 @@
     <objectAnimator
         android:duration="2500"
         android:propertyName="translationX"
-        android:valueTo="-10dp" />
+        android:valueTo="-5dp" />
     <objectAnimator
         android:duration="2500"
         android:propertyName="scaleX"

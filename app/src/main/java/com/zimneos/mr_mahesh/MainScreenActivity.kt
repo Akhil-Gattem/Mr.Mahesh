@@ -1,4 +1,5 @@
 package com.zimneos.mr_mahesh
+
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
@@ -8,9 +9,11 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.zimneos.mr_mahesh.R
+import com.zimneos.mr_mahesh.ui.BottomSheetDialog
 import kotlinx.android.synthetic.main.layout_main_activity_with_nav.*
 import kotlinx.android.synthetic.main.layout_main_screen.*
+import android.view.MenuItem
+
 
 class MainScreenActivity : AppCompatActivity() {
 
@@ -32,9 +35,24 @@ class MainScreenActivity : AppCompatActivity() {
         nav_view.setupWithNavController(navController)
     }
 
+    private fun showAbout() {
+        val bottomSheet = BottomSheetDialog()
+        bottomSheet.show(supportFragmentManager, "ModalBottomSheet")
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.layout_info_dailog, menu)
         return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_about -> {
+                showAbout()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

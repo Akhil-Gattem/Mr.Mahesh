@@ -4,11 +4,11 @@
     <objectAnimator
         android:duration="2500"
         android:propertyName="translationY"
-        android:valueFrom="75dp"
+        android:valueFrom="25dp"
         android:valueTo="0dp" />
     <objectAnimator
         android:duration="2500"
         android:propertyName="translationX"
-        android:valueFrom="-50dp"
+        android:valueFrom="-20dp"
         android:valueTo="0dp" />
 </set>

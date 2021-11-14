@@ -30,11 +30,6 @@ class StartScreenActivity : AppCompatActivity() {
         set.start()
     }
 
-    private fun setFullScreen() {
-        requestWindowFeature(Window.FEATURE_NO_TITLE)
-        this.window.setFlags(FLAG_FULLSCREEN, FLAG_FULLSCREEN)
-    }
-
     override fun onStart() {
         super.onStart()
         intent = Intent(this, MainScreenActivity::class.java)
