@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginVertical="4dp"
+    android:layout_height="167dp"
     android:background="@color/light_dark">
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -42,7 +41,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/bg"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.266"
+        app:layout_constraintVertical_bias="1"
         app:layout_constraintWidth_percent="0.275"
         app:shapeAppearanceOverlay="@style/corners_three_percentage"
         tools:ignore="UnusedAttribute" />
@@ -107,14 +106,14 @@
         android:layout_height="0dp"
         android:scaleType="fitXY"
         android:src="@drawable/rating"
+        app:layout_constraintDimensionRatio="5:1"
         app:layout_constraintBottom_toBottomOf="@+id/bg"
         app:layout_constraintEnd_toEndOf="@+id/director"
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/title"
         app:layout_constraintTop_toBottomOf="@+id/director"
-        app:layout_constraintVertical_bias="0.2"
-        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintVertical_bias="0.19"
         tools:ignore="ContentDescription" />
 
     <ImageView

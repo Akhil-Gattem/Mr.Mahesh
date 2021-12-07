@@ -14,6 +14,7 @@ import com.zimneos.mr_mahesh.R
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.android.material.imageview.ShapeableImageView
+import com.zimneos.mr_mahesh.common.MotionOnClickListener
 import kotlinx.android.synthetic.main.layout_main_screen_recylerview_list.view.*
 
 
