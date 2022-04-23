@@ -13,14 +13,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaheshBabu"
         tools:ignore="AllowBackup">
-        <activity android:name="com.zimneos.mr_mahesh.MainScreenActivity">
+        <activity
+            android:name="com.zimneos.mr_mahesh.MainScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.zimneos.mr_mahesh.StartScreenActivity">
+        <activity
+            android:name="com.zimneos.mr_mahesh.StartScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,13 +36,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.zimneos.mr_mahesh.ui.home.InfoScreenActivity">
+            android:name="com.zimneos.mr_mahesh.ui.home.InfoScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-    </application>
 
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6781887285551411~6906209227" />
+    </application>
 </manifest>

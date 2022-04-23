@@ -13,6 +13,8 @@ import kotlinx.android.synthetic.main.layout_info_screen.*
 import android.content.Intent
 import android.net.Uri
 import androidx.core.net.toUri
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.play_button_layout.*
 
 
@@ -23,10 +25,12 @@ class InfoScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_info_screen)
+
         info_back_btn.setOnClickListener {
             animation(info_back_btn, R.animator.back_btn_animator)
             onBackPressed()
         }
+
         val extras = intent.extras
         posterData = extras?.getString("poster").toString()
         titleData = extras?.getString("title").toString()

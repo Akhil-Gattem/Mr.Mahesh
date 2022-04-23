@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.facebook.shimmer.ShimmerFrameLayout
 import com.firebase.ui.database.FirebaseRecyclerOptions
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import com.google.android.material.imageview.ShapeableImageView
 import com.google.firebase.database.FirebaseDatabase
 import com.zimneos.mr_mahesh.R
